@@ -12,6 +12,7 @@ class AdminController extends Controller
     {
         $data['products'] = Product::with('discount')->get();
 
+
         return view('admin',$data);
     }
 }
